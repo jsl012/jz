@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>玲姐手工水饺馄饨 - 美味一口，满足味蕾</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="imgs/IMG_20240920_202015.jpg" alt="Logo" height="30"> 玲姐手工水饺馄饨</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">首页</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#products">产品介绍</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">关于我们</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="imgs/mmexport1715244352890.jpg" alt="饺子"><h2>美味饺子，一口满足</h2></div>
+                <div class="swiper-slide"><img src="imgs/mmexport1715244166270.jpg" alt="馄饨"><h2>鲜香馄饨，味蕾盛宴</h2></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </section>
+
+        <section id="products" class="container my-5">
+            <h2 class="text-center mb-4">我们的产品</h2>
+            <div class="row" id="productList">
+                <!-- 产品将通过 JavaScript 动态添加 -->
+            </div>
+        </section>
+
+        <section id="about" class="bg-light py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">我们的特色</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3><i class="fas fa-leaf"></i> 新鲜食材</h3>
+                        <p>我们只选用最新鲜的食材，确保每一口都充满美味。</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3><i class="fas fa-hands"></i> 传统手工</h3>
+                        <p>坚持传统手工制作，保留最原汁原味的口感。</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h3><i class="fas fa-mortar-pestle"></i> 独特配方</h3>
+                        <p>独家秘制配方，让您品尝到与众不同的美味。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="container my-5">
+            <h2 class="text-center mb-4">顾客评价</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">"饺子馅料丰富，皮薄馅大，非常美味！"</p>
+                            <footer class="blockquote-footer">张先生</footer>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">"馄饨汤鲜美可口，冬天吃最合适了。"</p>
+                            <footer class="blockquote-footer">李女士</footer>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">"种类丰富，每次都能尝试不同口味。"</p>
+                            <footer class="blockquote-footer">王先生</footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container my-5">
+            <h2 class="text-center mb-4">联系我们</h2>
+            <div class="row">
+                <div class="col-md-6 mx-auto text-center">
+                    <img src="imgs/mmqrcode1726834171847.png" alt="微信二维码" class="img-fluid mb-3" style="max-width: 200px;">
+                    <p>扫描上方二维码添加微信</p>
+                    <p>联系电话：1314 0516 596</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-light py-3">
+        <div class="container text-center">
+            <p>&copy; 2023 玲姐手工水饺馄饨. 版权所有.</p>
+            <div>
+                <a href="https://v.douyin.com/ikHcDjK9/" target="_blank" class="text-light me-2"><i class="fab fa-tiktok"></i> 抖音</a>
+                <a href="#" class="text-light me-2"><i class="fab fa-weixin"></i> 微信</a>
+                <a href="#" class="text-light"><i class="fas fa-play-circle"></i> 快手</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

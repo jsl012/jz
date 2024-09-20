@@ -1,0 +1,126 @@
+body {
+    font-family: 'Microsoft YaHei', sans-serif;
+}
+
+.navbar {
+    margin-bottom: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.swiper {
+    width: 100%;
+    height: auto; /* 改为自动高度 */
+    margin-bottom: 2rem;
+}
+
+.swiper-slide {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 宽高比 */
+}
+
+.swiper-slide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* 改为 contain 以显示整张图片 */
+}
+
+.swiper-slide h2 {
+    position: absolute;
+    bottom: 20px;
+    left: 50%; /* 将左边距设置为50% */
+    transform: translateX(-50%); /* 使用transform将文字向左移动自身宽度的50% */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    z-index: 1;
+    text-align: center; /* 文字居中对齐 */
+    width: 100%; /* 设置宽度为100%以确保文字居中 */
+}
+
+#products {
+    padding-top: 2rem;
+}
+
+.product-card {
+    transition: transform 0.3s;
+    margin-bottom: 1rem;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.product-card.special-background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    height: 200px; /* 设置固定高度 */
+    /* 移除红色边框 */
+    /* border: 2px solid red; */
+}
+
+.product-card.special-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* 减少透明度 */
+    z-index: 1;
+}
+
+.product-card.special-background .card-body {
+    position: relative;
+    z-index: 2;
+    background-color: transparent;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.product-card.special-background .card-title,
+.product-card.special-background .card-text {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* 为虾仁鲜肉馄饨设置背景图片 */
+.product-card.special-background:nth-of-type(11) {
+    background-image: url('imgs/mmexport1715244191103.jpg');
+}
+
+/* 为皮蛋鲜肉馄饨设置背景图片 */
+.product-card.special-background:nth-of-type(9) {
+    background-image: url('imgs/mmexport1715244240172.webp');
+}
+
+/* 为鲜肉香菇水饺设置背景图片 */
+.product-card.special-background:nth-of-type(5) {
+    background-image: url('imgs/mmexport1715244187614(1).png');
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        padding-top: 1rem;
+    }
+}
+
+#modalImage {
+    width: 100%;
+    height: auto;
+}
